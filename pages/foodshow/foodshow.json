@@ -1,0 +1,6 @@
+{
+  "usingComponents": {"van-cell": "../lib/lib/cell/index",
+    "van-cell-group": "../lib/lib/cell-group/index",
+    "van-icon": "../lib/lib/icon/index",
+    "van-card": "../lib/lib/card/index"}
+}

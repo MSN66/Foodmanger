@@ -1,0 +1,289 @@
+/* pages/tempelate/yindao.wxss */
+.contain{
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+}
+.next_imgs {
+  position: relative;
+  left: 60%;
+  width: 242rpx;
+  text-align: center;
+  background: url("http://static.mqsocial.com/imgs/party/online/v3/common/noob/chat.png");
+  height: 76rpx;
+  line-height: 76rpx;
+  background-size: cover;
+  font-size: 30rpx;
+  color: #fff;
+  bottom: 750rpx;
+}
+.next_imgs1{
+  position: fixed;
+  left: 60%;
+  /* width: 242rpx; */
+  width: 33%;
+  text-align: center;
+  background: url("http://static.mqsocial.com/imgs/party/online/v3/common/noob/chat.png");
+  height: 76rpx;
+  line-height: 76rpx;
+  background-size: cover;
+  font-size: 30rpx;
+  color: #fff;
+  /* bottom: 300rpx; */
+  bottom: 83%;
+}
+.next_imgs2{
+  position: relative;
+  left: 60%;
+  width: 242rpx;
+  text-align: center;
+  background: url("http://static.mqsocial.com/imgs/party/online/v3/common/noob/chat.png");
+  height: 76rpx;
+  line-height: 76rpx;
+  background-size: cover;
+  font-size: 30rpx;
+  color: #fff;
+  bottom: 350rpx;
+}
+.next_imgs3{
+  position: relative;
+  left: 60%;
+  width: 242rpx;
+  text-align: center;
+  background: url("http://static.mqsocial.com/imgs/party/online/v3/common/noob/chat.png");
+  height: 76rpx;
+  line-height: 76rpx;
+  background-size: cover;
+  font-size: 30rpx;
+  color: #fff;
+  bottom: 1030rpx;
+}
+.page-cont,
+.shadow-box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  background-color: rgba(22, 23, 24, 0.5);
+}
+.page-cont .top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.page-cont .top .p_one {
+  position:fixed;
+  bottom:-100rpx;
+  float: right;
+  width: 25%;
+  font-size: 28rpx;
+  line-height: 72rpx;
+  color: #fff;
+  background-color: #fbbd08;
+  text-align: center;
+  border-radius: 72rpx;
+  margin:  0 0 20% 3%;
+}
+.page-cont .cont {
+  width: 100%;
+  margin-top: 170rpx;
+  /* display: flex; */
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-cont .cont .cont-p {
+  /* display: flex; */
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 72rpx;
+  margin:10rpx;
+  text-align: center;
+}
+.page-cont .cont .cont-p1 {
+  /* display: flex; */
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 72rpx;
+  margin:1000rpx 10rpx 0rpx;
+  text-align: center;
+}
+
+.page-cont .cont .cont-p .text {
+  width:60%;
+  font-size:30rpx;
+  line-height:72rpx;
+  text-align:center;
+  border-radius:44rpx;
+  border:1px solid #fff;
+  /* background: url("http://static.mqsocial.com/imgs/party/online/v3/common/noob/chat.png"); */
+  margin:44% auto 0 auto;
+  color:#fff;
+  position: relative;
+top: 150rpx;
+
+}
+.page-cont .cont .cont-p .text1 {
+  width:60%;
+  font-size:30rpx;
+  line-height:72rpx;
+  text-align:center;
+  border-radius:44rpx;
+  border:1px solid #fff;
+  /* background: url("http://static.mqsocial.com/imgs/party/online/v3/common/noob/chat.png"); */
+  margin:44% auto 0 auto;
+  color:#fff;
+  position: relative;
+top: 6rpx;
+}
+
+.page-cont .cont .cont-p1 .text {
+  width:60%;
+  font-size:30rpx;
+  line-height:72rpx;
+  text-align:center;
+  border-radius:44rpx;
+  border:1px solid #fff;
+  margin:auto 0 auto;
+  color:#fff;
+  /* display: flex;
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 72rpx;
+  text-align: center;
+  align-items: center; */
+}
+
+.page-cont .cont .cont-p1 .text1 {
+  width:66%;
+  font-size:30rpx;
+  line-height:72rpx;
+  text-align:center;
+  /* border-radius:44rpx;
+  border:1px solid #fff; */
+  background: url("http://static.mqsocial.com/imgs/party/online/v3/common/noob/chat.png");
+  margin:auto 0 auto;
+  color:#fff;
+  margin-left: 125rpx;
+  position: relative;
+  bottom: 160rpx;
+}
+.page-cont .cont .cont-p1 .text2 {
+  width:66%;
+  font-size:30rpx;
+  line-height:72rpx;
+  text-align:center;
+  /* border-radius:44rpx;
+  border:1px solid #fff; */
+  background: url("http://static.mqsocial.com/imgs/party/online/v3/common/noob/chat.png");
+  margin:auto 0 auto;
+  color:#fff;
+  margin-left: 250rpx;
+  position: relative;
+bottom: 160rpx;
+}
+.page-cont .cont .cont-p1 .text3 {
+  width:60%;
+  font-size:30rpx;
+  line-height:72rpx;
+  text-align:center;
+  border-radius:44rpx;
+  border:1px solid #fff;
+  margin:auto 0 auto;
+  color:#fff;
+  margin-left: 295rpx;
+}
+.page-cont .cont .cont-p .img {
+  position: absolute;
+  left: 2%;
+top: 1.4%;
+height: 26%;
+width: 95%;
+border: 5rpx dashed #fff;
+}
+
+.page-cont .cont .cont-p image {
+  width: 90rpx;
+  height: 90rpx;
+  top: 30rpx;
+  left: -290rpx;
+  margin:20rpx 20rpx;
+}
+
+.page-cont .bottom {
+  /* margin-top: 1000rpx; */
+  width: 95%;
+  font-size: 30rpx;
+  line-height: 72rpx;
+  text-align: center;
+  border: 2rpx rgb(254, 254, 254) solid;
+  border-radius: 44rpx;
+  margin:  40% auto 5% auto;
+  color: #fff;
+}
+
+.page-cont .cont .cont-p .wawa {
+ 
+  margin:0;
+  position: absolute;
+  left: 2%;
+  top: 44%;
+  height: 33%;
+  width: 95%;
+  border: 5rpx dashed #fff;
+  /* border-radius: 50%; */
+}
+
+
+
+.page-cont .cont .cont-p .xiexin {
+  margin: 0;
+  position: absolute;
+  left: 2%;
+top: 32%;
+height: 7%;
+width: 95%;
+border: 5rpx dashed #fff;
+}
+.page-cont .cont .cont-p1 .dh1 {
+  margin: 0;
+  position: absolute;
+  left: 5%;
+top: 87%;
+height: 14%;
+width: 15%;
+}
+.page-cont .cont .cont-p1 .dh2 {
+  margin: 0;
+  position: absolute;
+  left: 43%;
+top: 87%;
+height: 14%;
+width: 15%;
+}
+.page-cont .cont .cont-p1 .dh3 {
+  margin: 0;
+  position: absolute;
+  left: 76%;
+top: 87%;
+height: 14%;
+width: 15%;
+}
+.page-cont .cont .cont-p1 .dh4 {
+  margin: 0;
+  position: absolute;
+  left: 80%;
+top: 87%;
+height: 14%;
+width: 15%;
+}
+
+
+

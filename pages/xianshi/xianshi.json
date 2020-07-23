@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-button": "../lib/lib/button/index",
+    "van-index-bar": "../lib/lib/index-bar/index",
+  "van-index-anchor": "../lib/lib/index-anchor/index",
+  "van-dialog": "../lib/lib/dialog/index"
+  }
+}

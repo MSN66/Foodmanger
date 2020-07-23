@@ -1,0 +1,316 @@
+<view class="container">
+<view class="topone">
+<image class="sc" src="../image/1.png"></image>
+</view>
+<view class="mid">
+<van-search
+  value="{{ showvalue1 }}"
+  field-class="btton"
+  placeholder="请输入查询食物名称"
+  input-align="center"
+  shape="round"
+  background="#D3D3D3"
+  use-action-slot
+  bind:change="inputone"
+  bind:clear="cler"
+>
+  <view slot="action" style="font-size:" bind:tap="btn">搜索</view>
+</van-search>
+</view>
+<view class="recommmend">
+
+<van-tabs type="line" class="nc" animated 
+v-model="active"
+
+title-active-color="#144a9e" 
+color="#144a9e"  >
+
+  <van-tab title="菜单推荐">
+   <view class="ces">
+  <van-sidebar active-key="{{activeKey}}" active="{{ active }}" bind:change="onChange1">
+  <view style="width:130rpx">
+  <van-sidebar-item title="{{title1}}" bind:tap="cht1"></van-sidebar-item >
+  <van-sidebar-item title="{{title2}}" bind:tap="cht2"/>
+  <van-sidebar-item title="{{title3}}" bind:tap="cht3"/>
+  <van-sidebar-item title="{{title4}}" bind:tap="cht4"/>
+    <van-sidebar-item title="{{title5}}" bind:tap="cht5"/>
+      <van-sidebar-item title="{{title6}}" bind:tap="cht6"/>
+        <van-sidebar-item title="{{title7}}" bind:tap="cht7"/>
+          <van-sidebar-item title="{{title8}}" bind:tap="cht8"/>
+         <van-sidebar-item title="{{title9}}" bind:tap="cht9"/>
+         <van-sidebar-item title="{{title10}}" bind:tap="cht10"/>
+         <van-sidebar-item title="{{title11}}" bind:tap="cht11"/>
+</view>
+</van-sidebar>
+<view class="showfood" wx:if="{{showfood['fruit'].length!=0}}">
+<view class="fruit">
+<view class="title1">
+水果/干果/蔬菜 等食物
+</view>
+<view class="f1">
+<view class="con1">
+
+ <van-image
+round
+  width="5rem"
+  height="5rem"
+  fit="cover"
+src="{{showfood['fruit'][ind1].img}}"
+/>
+  
+ 
+<text class="foodname2">
+{{showfood['fruit'][ind1].foodname}}
+</text>
+</view>
+
+<view class="con2">
+
+ <van-image
+round
+  width="5rem"
+  height="5rem"
+  fit="cover"
+src="{{showfood['fruit'][ind1+2].img}}"
+/>
+  
+
+<text class="foodname2">
+{{showfood['fruit'][ind1+2].foodname}}
+</text>
+</view> 
+
+
+ <view class="con3">
+
+ <van-image
+round
+  width="5rem"
+  height="5rem"
+  fit="cover"
+ src="{{showfood['fruit'][ind1+1].img}}"
+/>
+  
+<text class="foodname2">
+{{showfood['fruit'][ind1+1].foodname}}
+</text>
+</view>
+</view>
+</view>
+
+<view class="meat"  wx:if="{{showfood['meat'].length!=0}}">
+<view class="title2">
+肉类/海鲜/水产品 等食物
+</view>
+<view class="m1">
+<view class="con1">
+<van-image
+round
+  width="5rem"
+  height="5rem"
+  fit="cover"
+ src="{{showfood['meat'][ind2+0].img}}"
+/>
+   
+<text class="foodname2">
+{{showfood['meat'][ind2+0].foodname}}
+</text>
+</view>
+
+<view class="con2">
+<van-image
+round
+  width="5rem"
+  height="5rem"
+  fit="cover"
+src="{{showfood['meat'][ind2+1].img}}"
+/>
+   
+
+<text class="foodname2">
+{{showfood['meat'][ind2+1].foodname}}
+</text>
+</view> 
+
+
+ <view class="con3">
+
+<van-image
+ round
+  width="5rem"
+  height="5rem"
+  fit="cover"
+src="{{showfood['meat'][ind2+2].img}}"
+/>
+ 
+<text class="foodname2">
+{{showfood['meat'][ind2+2].foodname}}
+</text>
+</view>
+</view>
+</view>
+
+
+<view class="egg" wx:if="{{showfood['egg'].length!=0}}">
+<view class="title3">
+豆类/蛋奶/药材 等其它食物
+</view>
+<view class="e1">
+<view class="con1">
+
+
+
+<van-image
+ round
+  width="5rem"
+  height="5rem"
+  fit="cover"
+src="{{showfood['egg'][ind3+0].img}}"
+/>
+ 
+   
+<text class="foodname2">
+{{showfood['egg'][ind3+0].foodname}}
+</text>
+</view>
+
+<view class="con2">
+<van-image
+round
+  width="5rem"
+  height="5rem"
+  fit="cover"
+src="{{showfood['egg'][ind3+1].img}}"
+/>
+   
+<text class="foodname2">
+{{showfood['egg'][ind3+1].foodname}}
+</text>
+</view> 
+
+
+ <view class="con3">
+ <van-image
+ round
+  width="5rem"
+  height="5rem"
+  fit="cover"
+src="{{showfood['egg'][ind3+2].img}}"
+/>
+   
+   
+<text class="foodname2">
+{{showfood['egg'][ind3+2].foodname}}
+</text>
+</view>
+</view>
+</view>
+<view class="menu" wx:if="{{showfood['menu'].length!=0}}">
+<view class="title4">
+菜谱
+</view>
+<view class="me1">
+<view class="con1">
+<van-image
+round
+  width="5rem"
+  height="5rem"
+  fit="cover"
+src="{{showfood['menu'][ind4+0].img}}"
+/>
+   
+<text class="foodname2">
+{{showfood['menu'][ind4+0].foodname}}
+</text>
+</view>
+
+<view class="con2">
+
+<van-image
+round
+  width="5rem"
+  height="5rem"
+  fit="cover"
+src="{{showfood['menu'][ind4+1].img}}"
+/>
+   
+
+<text class="foodname2">
+{{showfood['menu'][ind4+1].foodname}}
+</text>
+</view> 
+
+
+ <view class="con3">
+
+ <van-image
+ round
+  width="5rem"
+  height="5rem"
+  fit="cover"
+src="{{showfood['menu'][ind4+2].img}}"
+/>
+ 
+<text class="foodname2">
+{{showfood['menu'][ind4+2].foodname}}
+</text>
+</view>
+</view>
+
+</view>
+
+
+</view>
+</view>
+</van-tab>
+  <van-tab title="时令蔬菜">
+<block wx:for="{{index2}}" wx:for-item="item" wx:for-index="key">
+
+
+  <view class="shiling">
+  <view class="tuwen" style="margin-left:100rpx;">
+  
+<van-image
+  round
+margin-left="20rpx"
+ width="7rem"
+  height="7rem"
+  fit="cover"
+   src="{{dalis[item+1].img}}"
+/>
+
+<text class="foodname">{{dalis[item+1].foodname}}</text>
+</view>
+
+<view class="tuwen2" style="margin-left:150rpx;">
+<van-image
+  round
+margin-left="40rpx"
+  width="7rem"
+  height="7rem"
+  fit="cover"
+  src="{{dalis[item+2].img}}"
+/>
+<text class="foodname">{{dalis[item+2].foodname}}</text>
+</view>
+   </view>
+
+  </block>
+  </van-tab>
+
+</van-tabs>
+
+</view>
+
+  <block >
+    <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+        <image class="logo" src="../image/logp.jpg"></image>">
+        <image class="wave" src="../image/wave.png" mode="aspectFill"></image>
+        <image class="wave wave-bg" src="../image/wave.png" mode="aspectFill"></image>
+      </view>
+      <view class="bd">
+      </view>
+    </view>
+  </block>
+</view>

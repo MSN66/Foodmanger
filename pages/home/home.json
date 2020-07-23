@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-notice-bar": "../lib/lib/notice-bar/index",
+    "van-dialog": "../lib/lib/dialog/index",
+    "van-icon":"../lib/lib/icon/index"
+  }
+}

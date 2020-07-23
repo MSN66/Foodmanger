@@ -1,0 +1,198 @@
+/* pages/home/home.wxss */
+@import "../template/yindao.wxss";
+.contration{
+ padding: 15rpx;
+  background: -webkit-linear-gradient(top,rgb(168,201,127),rgb(200,213,221));
+ height:880px;
+}
+
+.lead{
+  display: inline-block;
+
+    width: 720rpx;
+  
+  
+   
+  }
+  .up{
+    padding-top: 20rpx;
+    font-size: 35rpx;
+  }
+  .up1{
+    font-size: 35rpx;
+  }
+.body{
+  background-color: rgb(255,255,255,0.6);                                                                          margin-top:5px;                    
+  display: flex;
+  flex-direction: column;
+   box-shadow: 0 0 15px rgb(137,137,137);
+   border-radius:15px;
+}
+
+
+.avatarUrl {
+  display: inline-block;
+  margin-left:150rpx;
+  width: 140rpx;
+  height: 140rpx;
+  margin-top: 50rpx;
+  margin-left: 40rpx;
+  border-radius: 50%;
+}
+ 
+.Nickname {
+  display: inline-block;
+  color:black;
+  height: 250rpx;
+  font-size: 70rpx;
+ margin-left:30px;
+ line-height:250rpx;
+
+}
+
+.back{
+  display: flex;
+  flex-direction: co  lumn;
+  
+  width: 10%;
+  margin-left: 600rpx;
+
+
+
+
+}
+.mid{
+  height: 40px;
+ 
+  margin-top:50rpx;
+  border-radius:65px;
+  box-shadow: 0 0 15px rgb(137,137,137);
+  margin-bottom:40rpx;
+}
+.DBW{
+  display: flex;
+  margin-left: 1px;
+  font-size: 28px;
+  
+}
+
+.intake{
+  width: 720rpx;
+  text-align: center;
+  margin-top:50rpx;
+  background-color: rgb(255,255,255,0.6);
+  box-shadow: 0 0 15px rgb(137,137,137);
+ padding: 77rpx 0;
+  border-radius:15px;
+}
+.output{ 
+  width: 720rpx;
+  text-align: center;
+  margin-top:40rpx;
+  background-color: rgb(255,255,255,0.6);
+  box-shadow: 0 0 15px rgb(137,137,137);
+  padding: 77rpx 0;
+  border-radius:15px;
+}
+
+
+.swiper-view{
+  background-color: rgba(237, 237, 237, 0.6);
+height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15rpx;
+  
+
+
+ }
+  
+ .swiper_container {
+  height: 40px;
+  width: 100%;
+
+ }
+  
+ .swiper_item {
+  text-align: center;
+  line-height:400rpx;
+  height: 100rpx;
+  width: 100%;
+  font-size: 1.3rem;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+
+ }
+  
+ .modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  padding: 10px;
+}
+ 
+.modal-dialog {
+  overflow: hidden;
+  position: fixed;
+  margin-right: 30px;
+  background: #f9f9f9;
+ 
+
+}
+
+.view-image{
+  width: 600rpx;
+  height: 600rpx;
+  justify-content: center;
+}
+
+
+
+.swiper image {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.swiper-container2{
+  
+  position: relative;
+ }
+ .swiper-container2 .swiper{
+  height: 300rpx;
+ }
+ .swiper-container2 .swiper .img{
+  width: 100%;
+  height: 100%;
+ }
+ .swiper-container2 .dots{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20rpx;
+  display: flex;
+  justify-content: center;
+ }
+ .swiper-container2 .dots .dot{
+  margin: 0 8rpx;
+  width: 14rpx;
+  height: 14rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  transition: all .6s;
+ }
+ .swiper-container2 .dots .dot.active{
+  width: 24rpx;
+  background: #f80;
+ }

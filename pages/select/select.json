@@ -1,0 +1,11 @@
+{
+  "usingComponents": {"van-search": "../lib/lib/search/index", 
+    "van-tab": "../lib/lib/tab/index",
+    "van-tabs": "../lib/lib/tabs/index",
+    "van-image": "../lib/lib/image/index",
+    "van-sidebar": "../lib/lib/sidebar/index",
+    "van-sidebar-item": "../lib/lib/sidebar-item/index"},
+  "navigationBarTitleText": " ",
+  "enablePullDownRefresh": false,
+  "disableScroll": false
+}

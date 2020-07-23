@@ -1,0 +1,46 @@
+<!--pages/foodshow/foodshow.wxml-->
+
+<view class="c">
+
+
+<view class="v1"  wx:if="{{length>=1}}" bindtap="tap1">
+<van-card
+centered="true"
+  desc="{{zu[0].foodname}}" desc-class="fontt"
+  thumb="{{zu[0].link}}"
+/>
+
+
+</view>
+<view class="v" wx:if="{{length>=2}}"  bindtap="tap2">
+<van-card
+centered="true"
+  desc="{{zu[1].foodname}}" desc-class="fontt"
+  thumb="{{zu[1].link}}"
+/>
+</view>
+<view class="v" wx:if="{{length>=3}}"  bindtap="tap3">
+
+<van-card
+centered="true"
+  desc="{{zu[2].foodname}}" desc-class="fontt"
+  thumb="{{zu[2].link}}"
+/>
+</view>
+<view class="v" wx:if="{{length>=4}}"  bindtap="tap4">
+
+<van-card
+centered="true"
+  desc="{{zu[3].foodname}}" desc-class="fontt"
+  thumb="{{zu[3].link}}"
+/>
+</view>
+<view class="v" wx:if="{{length>=5}}"  bindtap="tap5">
+
+<van-card
+centered="true"
+  desc="{{zu[4].foodname}}" desc-class="fontt"
+  thumb="{{zu[4].link}}"
+/>
+</view>
+</view>

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {"van-button": "../lib/lib/button/index",
+    "van-dropdown-menu": "../lib/lib/dropdown-menu/index",
+    "van-dropdown-item": "../lib/lib/dropdown-item/index",
+    "van-search": "../lib/lib/search/index", 
+    "van-tab": "../lib/lib/tab/index",
+    "van-tabs": "../lib/lib/tabs/index",
+    "van-image": "../lib/lib/image/index"}
+}

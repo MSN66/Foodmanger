@@ -1,0 +1,125 @@
+<!--pages/tempelate/yindao.wxml-->
+<view class="contain">
+	<template name='yindao1'>
+		<view class='page-cont'>
+			<view class='cont'>
+				<view class='top'>
+					<view class='bottom' bindtap='close2'>欢迎使用私人营养管家，它能够给予您进行每天食物摄入，以及热量消耗的热量查询，还能够将您每天的热量变化信息写进数据库中，对您进行追踪记录，能够实时向您展现出来。
+					</view>
+				</view>
+			</view>
+			<view class='top'>
+				<view class='p_one' bindtap='close1'>朕已阅</view>
+			</view>
+			<view class='next_imgs' bindtap='closeThis'>
+        跳过新手引导
+      </view>
+		</view>
+	</template>
+	<template name='yindao2'>
+		<view class='page-cont'>
+			<view class='cont'>
+				<view class='cont-p'>
+					<view class="img"></view>
+
+					<view class='text'>查看个人信息，并反馈意见</view>
+				</view>
+				<view class='top'>
+					<view class='p_one' bindtap='close2'>朕已阅</view>
+				</view>
+				<view class='next_imgs1' bindtap='closeThis'>
+        跳过新手引导
+      </view>
+			</view>
+		</view>
+	</template>
+	<template name='yindao3'>
+		<view class='page-cont'>
+			<view class='cont'>
+				<view class='cont-p'>
+					<view class="xiexin"></view>
+					<view class='text'>根据你的身高体重查看你每日所需热量以及BMI的值</view>
+				</view>
+				<view class='top'>
+					<view class='p_one' bindtap='close3'>朕已阅</view>
+				</view>
+				<view class='next_imgs2' bindtap='closeThis'>
+        跳过新手引导
+      </view>
+			</view>
+		</view>
+	</template>
+	<template name='yindao4'>
+		<view class='page-cont'>
+			<view class='cont'>
+				<view class='cont-p'>
+					<view class="wawa"></view>
+					<view class='text1'>展示近7天内食物摄入和运动消耗热量折线图</view>
+				</view>
+				<view class='top'>
+					<view class='p_one' bindtap='close4'>朕已阅</view>
+				</view>
+				<view class='next_imgs2' bindtap='closeThis'>
+        跳过新手引导
+      </view>
+			</view>
+		</view>
+	</template>
+	
+	<!-- <template name='yindao5'>
+		<view class='page-cont'>
+			<view class='cont'>
+				<view class='cont-p1'>
+				
+					<image src="../picture/arrow.png" class="dh1"></image>
+					<view class='text'>展示近7天内食物摄入和运动消耗热量折线图</view>
+				</view>
+				<view class='top'>
+					<view class='p_one' bindtap='close5'>朕已阅</view>
+				</view>
+			</view>
+		</view>
+	</template> -->
+	<template name='yindao5'>
+		<view class='page-cont'>
+			<view class='cont'>
+				<view class='cont-p1'>
+					<image src="../picture/arrow.png" class="dh2"></image>
+					<view class='text1'>搜索食物热量，当季蔬菜和养生食物推荐</view>
+				</view>
+				<view class='top'>
+					<view class='p_one' bindtap='close5'>朕已阅</view>
+				</view>
+				<view class='next_imgs3' bindtap='closeThis'>
+        跳过新手引导
+      </view>
+			</view>
+		</view>
+	</template>
+	<template name='yindao6'>
+		<view class='page-cont'>
+			<view class='cont'>
+				<view class='cont-p1'>
+					<image src="../picture/arrow.png" class="dh3"></image>
+					<view class='text2'>可以选择输入或直接计时，记录您的运动时间，展示你的消耗热量</view>
+				</view>
+				<view class='top'>
+					<view class='p_one' bindtap='closeThis'>进入</view>
+				</view>
+			</view>
+		</view>
+	</template>
+	<!-- <template name='yindao7'>
+		<view class='page-cont'>
+			<view class='cont'>
+				<view class='cont-p1'>
+					<image src="../picture/arrow.png" class="dh4"></image>
+					<view class='text3'>展示近7天内食物摄入和运动消耗热量折线图</view>
+				</view>
+				<view class='top'>
+					<view class='p_one' bindtap='closeThis'>进入</view>
+				</view>
+			</view>
+		</view>
+	</template> -->
+</view>

@@ -1,0 +1,148 @@
+<!--pages/SportsConsum/SportsConsum.wxml-->
+<view class="contration">
+	<image class="background" src="http://a1.qpic.cn/psc?/V13wS44R2OtLTh/5PlDh9xjtAQeE4dBItNfWwS4YAb*p76P3hK67n9Te*NmoMVDZx.LXrszk4vhVQ1SoKjv9QMX2AvhK4Raj79tXQ!!/b&ek=1&kp=1&pt=0&bo=WAI.A1gCPgMRADc!&tl=3&vuin=1978468912&tm=1594951200&sce=60-2-2&rf=viewer_311"></image>
+	<view class="motto">
+		<text class="TXT">开始记录你的运动生活~</text>
+	</view>
+	<van-tabs type="card">
+		<van-tab title="输入">
+			<view>
+				<view class="all">
+
+
+					<view class="select-box">
+						<view class="select-current" catchtap="openClose">
+							<text class="current-name">{{current.name}}</text>
+						</view>
+						<view class="option-list" wx:if="{{isShow}}" catchtap="optionTap">
+							<text class="option"
+        data-id="{{defaultOption.id}}"
+        data-name="{{defaultOption.name}}">{{defaultOption.name}}
+							</text>
+							<text class="option"
+        wx:for="{{result}}"
+        wx:key="{{item.id}}"
+        data-id="{{item.id}}"
+        data-name="{{item.name}}">{{item.name}}
+							</text>
+						</view>
+						<view class="count">
+							<input name="count" bindinput="getCount" class="inp" type="number" placeholder="输入你的运动量" value="{{SportTime}}"></input>
+						</view>
+						<view class="select-current2">
+							<text class="current-name">{{Ucurrent.name}}</text>
+							<view class="option-list" wx:if="{{unitShow}}" catchtap="UoptionTap">
+								<text class="option"
+        data-id="{{UdefaultOption.id}}"
+        data-name="{{UdefaultOption.name}}">{{UdefaultOption.name}}
+								</text>
+								<text class="option"
+        wx:for="{{Uresult}}"
+        wx:key="{{item.id}}"
+        data-id="{{item.id}}"
+        data-name="{{item.name}}">{{item.name}}
+								</text>
+							</view>
+						</view>
+
+					</view>
+					<van-button style="margin-top:55rpx" bindtap="load" color="#ff8033" plain>添加数据</van-button>
+
+
+
+
+
+
+					<scroll-view class="showFrame" scroll-y='true' scroll-top="{{scrollTop}}">
+						<text class="option"
+        wx:for="{{list}}"
+        wx:key="{{item.oid}}"
+        data-id="{{item.oid}}"
+        data-name="{{item.name}}" >{{item.Sport}} {{item.Count}} {{item.Unit}}消耗{{item.heat}}Kcal热量
+						</text>
+						<button class="button2" catchtap="clear">清除</button>
+
+					</scroll-view>
+
+					<van-button class="button3" bindtap="writeToDB" color="#ff85bb" plain>提交记录</van-button>
+				</view>
+			</view>
+		</van-tab>
+		<van-tab title="计时">
+			<view>
+				<view class="all">
+
+
+					<view class="select-box">
+						<view class="select-current" catchtap="openClose">
+							<text class="current-name">{{current.name}}</text>
+						</view>
+						<view class="option-list" wx:if="{{isShow}}" catchtap="optionTap">
+							<text class="option"
+        data-id="{{defaultOption.id}}"
+        data-name="{{defaultOption.name}}">{{defaultOption.name}}
+							</text>
+							<text class="option"
+        wx:for="{{result}}"
+        wx:key="{{item.id}}"
+        data-id="{{item.id}}"
+        data-name="{{item.name}}">{{item.name}}
+							</text>
+						</view>
+						<view class="count">
+							<!-- <input name="count" bindinput="getCount" class="inp" type="number" placeholder="输入你的运动量" value="{{SportTime}}"></input> -->
+							<text class="inp">{{times[times.length-1].text}}</text>
+						</view>
+						<view class="select-current2">
+							<text class="current-name">{{Ucurrent.name}}</text>
+							<view class="option-list" wx:if="{{unitShow}}" catchtap="UoptionTap">
+								<text class="option"
+        data-id="{{UdefaultOption.id}}"
+        data-name="{{UdefaultOption.name}}">{{UdefaultOption.name}}
+								</text>
+								<text class="option"
+        wx:for="{{Uresult}}"
+        wx:key="{{item.id}}"
+        data-id="{{item.id}}"
+        data-name="{{item.name}}">{{item.name}}
+								</text>
+							</view>
+						</view>
+
+					</view>
+
+					<view class="cont">
+
+
+
+						<view class='timer'>
+							<view>
+								<text>{{minutes}}</text>
+								<text>：</text>
+								<text>{{seconds}}</text>
+								<text>：</text>
+								<text>{{millseconds}}</text>
+							</view>
+						</view>
+
+						<view>
+							<button class='btn-controller' catchtap="startOrPauseTimer">
+								{{isTiming?'暂停':'开始'}}
+							</button>
+							<button class='btn-controller' catchtap="resetTimerOrRecordTime">
+								{{isTiming?'停止':'归零'}}
+							</button>
+						</view>
+					</view>
+				</view>
+		
+		
+
+					<van-button class="button3" bindtap="writeToDB" color="#ff85bb" plain>提交记录</van-button>
+		
+			</view>
+		</van-tab>
+
+	</van-tabs>
+
+</view>

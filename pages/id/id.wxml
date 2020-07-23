@@ -1,0 +1,38 @@
+<view class="contration">
+
+	<view class="body">
+
+	<button open-type='feedback' class="group">
+			<view class="feedback">反馈</view>
+			<image class="back" src="../image/enter.png"></image>
+		</button>
+	
+
+		<view class="nickname">
+			<view class="name">{{Nickname}}</view>
+			<view class="name2">{{nickName}}</view>
+		</view>
+
+		<view class="Sex">
+			<view class="sex">{{Sex}}</view>
+			<view class="sex2">{{sex}}</view>
+		</view>
+
+		<view class="Birth">
+			<view class="birth">{{Age}}</view>
+			<view class="birth2">{{age}}岁</view>
+		</view>
+
+		<view class="Tall">
+			<view class="tall">{{Tall}}</view>
+			<view class="tall2">{{tall}}CM</view>
+		</view>
+
+		<view class="Heigh">
+			<view class="heigh">{{Weight}}</view>
+			<view class="heigh2">{{weight}}KG</view>
+		</view>
+
+	
+			</view>
+	</view>

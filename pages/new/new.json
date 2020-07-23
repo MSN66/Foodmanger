@@ -1,0 +1,6 @@
+{
+ "navigationBarBackgroundColor": "#FFC0CB",
+ "usingComponents": {
+  "van-field": "../lib/lib/field/index"
+}
+}

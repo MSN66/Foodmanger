@@ -1,0 +1,30 @@
+/* pages/foodshow/foodshow.wxss */
+.image{
+  width:50px;
+  height:50px;
+}
+.c{
+  margin: 0;
+  background-color: rgb(237, 237, 237);
+  height: 810px;
+flex-direction: column;
+align-items: center;
+padding:20px  0 0 0;
+
+justify-content: space-between;
+box-sizing: border-box;
+
+}
+.v1{
+ 
+  border-radius:15px ;
+  
+}
+.v{
+  margin-top: 50rpx;
+  border-radius:15px ;
+  
+}
+.fontt{
+  font-size: 20px;
+}

@@ -1,0 +1,147 @@
+
+<!-- <van-notice-bar
+  mode="closeable"
+ bind:click="jump"
+  text="点击此处进行功能引导。"
+/> -->
+<view class="contration">
+
+<!-- <van-dialog
+  use-slot
+  default=
+   title="提示"
+  show="{{ show }}"
+  showConfirmButton="false"
+  confirm-button-open-type="jump"
+  bind:close="onClose"
+  
+>
+
+<view class="swiper-container2">
+ <swiper indicator-dots="{{indicatorDots}}" autoplay="auto" interval="5000" duration="500" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">
+  <block wx:for="{{slider}}" wx:key="unique">
+   <swiper-item>
+    <image class="img"  src="{{item.picUrl}}" style="height:300px"></image>
+   </swiper-item>
+  </block>
+ </swiper>
+</view>
+</van-dialog> -->
+
+
+<view class="body">
+
+
+<view class="lead" bindtap="bindveiw" >
+ 
+ 
+<image class="avatarUrl" src="{{avatarUrl}}"></image>
+
+<view class="Nickname">{{nickname}}</view>
+ 
+
+</view>
+
+</view>
+<view class="mid">
+
+<view class="swiper-view">
+ <swiper class="swiper_container" bindchange="getCurIdx" vertical="true" autoplay="true" circular="true" interval="3000" current="{{swiperCurrent}}" >
+  <block wx:for="{{msgList}}" wx:key="key" >
+   <swiper-item>
+    <view class="swiper_item" bindtap="swipclick">{{item.title}}</view>
+   </swiper-item>
+  </block>
+ </swiper>
+</view>
+
+<view class="modal-mask" bindtap="hideModal"  wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+<image class="BMF" src="http://a1.qpic.cn/psc?/V13wS44R2OtLTh/.35sY8zpnPlhVlJz3hDe02PlTv5lOiXchcYc8wnZEjHHXghb.TTibUmZgbB1xhOK0dDq9HnWJfHqxAcdn4FkRQ!!/c&ek=1&kp=1&pt=0&bo=wgIDAsICAwIRADc!&tl=1&tm=1591419600&sce=0-12-12&rf=0-18"></image>
+</view> 
+
+<view class="modal-mask" bindtap="hideModal2"  wx:if="{{showModal2}}"></view>
+<view class="modal-dialog" wx:if="{{showModal2}}">
+<text class="introduce">健康体重是指长期保持体重良好的健康状态，通过您的BMI和基本信息得出您健康体重。</text>
+</view> 
+
+<view class="modal-mask" bindtap="hideModal3"  wx:if="{{showModal3}}"></view>
+<view class="modal-dialog" wx:if="{{showModal3}}">
+<text class="introduce">通过您的基本信息运用公式计算得出每日您所需热量。</text>
+</view> 
+
+<view class="modal-mask" bindtap="hideModal4"  wx:if="{{showModal4}}"></view>
+<view class="modal-dialog" wx:if="{{showModal4}}">
+<text class="introduce">通过您的基本信息运用公式计算得出每日您基础代谢。</text>
+</view> 
+<view class="modal-mask" bindtap="hideModal5"  wx:if="{{showModal5}}"></view>
+<view class="modal-dialog" wx:if="{{showModal5}}">
+<image class="BMF" src="http://a1.qpic.cn/psc?/V13wS44R2OtLTh/.35sY8zpnPlhVlJz3hDe059sfLFmYxVtBM6aS.I9tnXEYZlDIqk3U5oLx4GW3vnbBBCDWk2d3ntKtnywM3h6Ww!!/c&ek=1&kp=1&pt=0&bo=ogI8AaICPAERADc!&tl=1&tm=1591603200&sce=0-12-12&rf=0-18"></image>
+</view> 
+
+</view> 
+
+<view class="intake" bindtap="jump1">
+<view class="up1">{{intake}}{{intakecal}}KCAL</view>
+<view class="up">{{output1}}{{cokeincal}}瓶可乐</view>
+<view class="up">{{output1}}{{riceincal}}碗米饭</view>
+<view class="up">{{output1}}{{beefincal}}克牛肉</view>
+</view> 
+<view class="output" bindtap="jump1" >
+<view class="up1">{{output}}{{consumecal}}KCAL</view>
+<view class="up">{{output1}}{{cokecal}}瓶可乐</view>
+<view class="up">{{output1}}{{ricecal}}碗米饭</view>
+<view class="up">{{output1}}{{beefcal}}克牛肉</view>
+</view>
+
+
+<view wx:if="{{isTiptrue==1}}">
+		<import src="../template/yindao.wxml" />
+		<template is="yindao1" />
+	</view>
+	<view wx:if="{{isTiptrue==2}}">
+		<import src="../template/yindao.wxml" />
+		<template is="yindao2" />
+	</view>
+	<view wx:if="{{isTiptrue==3}}">
+		<import src="../template/yindao.wxml" />
+		<template is="yindao3" />
+	</view>
+  <view wx:if="{{isTiptrue==4}}">
+		<import src="../template/yindao.wxml" />
+		<template is="yindao4" />
+	</view>
+  <view wx:if="{{isTiptrue==5}}">
+		<import src="../template/yindao.wxml" />
+		<template is="yindao5" />
+	</view>
+  <view wx:if="{{isTiptrue==6}}">
+		<import src="../template/yindao.wxml" />
+		<template is="yindao6" />
+	</view>
+  <view wx:if="{{isTiptrue==7}}">
+		<import src="../template/yindao.wxml" />
+		<template is="yindao7" />
+	</view>
+  <view wx:if="{{isTiptrue==8}}">
+		<import src="../template/yindao.wxml" />
+		<template is="yindao8" />
+	</view>
+
+
+</view>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+

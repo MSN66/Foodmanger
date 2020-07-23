@@ -1,0 +1,103 @@
+/* pages/line/line.wxss */
+/**index.wxss**/
+ec-canvas {
+  width: 100%;
+  height: 90%;
+}
+.table2{
+margin-top: 40px;
+}
+.advice{
+  color: green;
+}
+
+.pict{
+  position:absolute; 
+  top: 0px;
+  bottom:0px;
+  left: 70px;
+  width: 500rpx;
+  height: 500rpx;
+  z-index: -1;
+  opacity:1;
+  opacity:0.6 ;
+  margin-top:600rpx ;
+}
+
+
+
+
+
+
+
+.pict3{
+  margin-left: 50px;
+
+}
+.c{
+  height: 880px;
+}
+.w{
+ 
+  display: flex;
+  
+  justify-content: center; 
+  margin:5px,0,0,0;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+}
+
+.suggest{
+  font-family:"LiSu";
+  font-size: 50rpx;
+}
+.titt{
+margin-left:0px ;
+position: relative;
+bottom: 50rpx;
+}
+.white{
+  height: 40prx;
+  width: 100%;
+}
+.adv{
+text-align: center;
+margin-left: 5rpx;
+  padding: 5px 5px;
+  width: 710rpx;
+  border-radius: 15px;  
+  border: 2px dashed grey;
+  margin-bottom: 15rpx;
+}
+.table {
+
+  font-size: 24rpx;
+ 
+  border: 1rpx solid #dadada;
+ }
+ .tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+ }
+ .td {
+  padding: 10rpx;
+  border-bottom: 1rpx solid #dadada;
+  border-right: 1rpx solid #dadada;
+  text-align: center;
+  width: 100%;
+ }
+ .Pag1{
+width: 100%;
+height: 100%;
+ }
+.Pag2{
+  width: 100%;
+  height: 100%;
+}

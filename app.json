@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/selem/selem",
+    "pages/select/select",
+    "pages/logs/logs",
+    "pages/xianshi/xianshi",
+    "utils/M",
+    "pages/foodshow/foodshow",
+    "utils/md5",
+    "pages/home/home",
+    "pages/id/id",
+    "pages/new/new",
+    "pages/SportsConsum/SportsConsum",
+    "pages/line/line"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "pages/picture/guests.png",
+        "selectedIconPath": "pages/picture/guests1.png"
+      },
+      {
+        "pagePath": "pages/select/select",
+        "text": "搜索",
+        "iconPath": "pages/picture/icon-test.png",
+        "selectedIconPath": "pages/picture/icon-test1.png"
+      },
+     
+      {
+        "pagePath": "pages/SportsConsum/SportsConsum",
+        "text": "运动",
+        "iconPath": "pages/picture/yundong.png",
+        "selectedIconPath": "pages/picture/yundong1.png"
+      }
+    ]
+  },
+ 
+  "sitemapLocation": "sitemap.json"
+  
+}
+
+  

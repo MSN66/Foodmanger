@@ -1,0 +1,28 @@
+<form bindsubmit="x">
+	<view class="print">
+		<view class="tit">{{tit}}</view>
+	 <view class="page-section">
+    
+        <input class="Age" name="age" type="number"auto-focus placeholder="请输入年龄"/>
+  </view>
+
+ <view class="page-section">
+    
+        <input class="Tall" name="tall"type="digit" auto-focus placeholder="请输入身高(单位：CM)"/>
+
+  </view>
+ <view class="page-section">
+  
+        <input class="Weight" name="weight"type="digit" auto-focus placeholder="请输入体重(单位：KG)"/>
+  </view> 
+			<view class="section">
+				<picker bindchange="bindPickerChange" name="sex" value="{{inputValue}}" range="{{array}}">
+					<view class="picker">
+						请选择性别 : {{array[inputValue]}}
+					</view>
+				</picker>
+			</view> 
+			<view class="viewName" style="color:#87CEFA">
+				<button class="loginBtn" form-type="submit">提交</button></view>
+	</view>
+</form>

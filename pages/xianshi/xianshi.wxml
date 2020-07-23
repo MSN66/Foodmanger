@@ -1,0 +1,109 @@
+<!--pages/xianshi/xianshi.wxml-->
+<view class="all">
+
+
+<view class="tittle">{{ttitle}}</view>
+
+<view class="img">
+ <view class="partleft"> 
+ <view class="foodtitle">
+ <view class="foodtitle1">
+{{foodimage}}
+</view>
+</view>
+<image  class="foodimage" src="{{imglink}}"></image>
+</view>
+</view>
+
+<view class="c">
+ <view class="partleft"> 
+<view class="foodtitle">
+<view class="foodtitle1">
+{{foodnames}}
+</view>
+</view>
+<view class="foodname">{{name}}
+ </view>
+</view>
+</view>
+
+<view class="partleft">
+<view class="foodtitle">
+<view class="foodtitle1">
+{{ttitle2}}
+</view>
+
+</view>
+<view class="partrigh2">
+<view class="top">
+每100g
+</view>
+<view class="down">
+所含热量{{kcal}}kcal
+</view>
+</view>
+</view>
+<view class="tangg">
+ <view class="partleft"> 
+ <view class="foodtitle">
+ <view class="foodtitle1">
+{{ttitle3}}
+</view>
+</view>
+<view class="foodname">{{tang}}</view>
+</view>
+</view>
+
+<view class="carbb">
+ <view class="partleft"> 
+ <view class="foodtitle">
+ <view class="foodtitle1">
+{{ttitle4}}
+</view>
+</view>
+<view class="foodname">{{Carb}}</view>
+</view>
+</view>
+
+<view class="Fatt">
+ <view class="partleft"> 
+ <view class="foodtitle">
+ <view class="foodtitle1">
+{{ttitle5}}
+</view>
+</view>
+<view class="foodname">{{Fat}}</view>
+</view>
+</view>
+
+<view class="Proo">
+ <view class="partleft"> 
+ <view class="foodtitle">
+ <view class="foodtitle1">
+{{ttitle6}}
+</view>
+</view>
+<view class="foodname">{{Pro}}</view>
+</view>
+</view>
+<view class="buttom">
+<view class="m">{{mg}}</view>
+<view class="selecttwo" >
+<input class="inputtwo" placeholder="      （单位/g）"  bindinput="classify"   vlaue="{{showvalue3}}">
+</input>
+</view>
+<van-dialog
+  use-slot
+ title="推荐"
+ custom-style="font-size:50rpx"
+  show="{{ show }}"
+  
+  confirm-button-open-type="btn33"
+ bind:confirm="btn3"
+>
+{{k}}
+</van-dialog>
+
+<van-button style="margin-left:10rpx" size="normal" bindtap="btn33" type="default">添加</van-button>
+</view>
+</view>
